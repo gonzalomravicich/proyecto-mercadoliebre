@@ -20,10 +20,12 @@ padding: 10px;
     margin: 15px auto;
     background-color:#1259c3;
     color: white;
+    border: none;
     border-radius: 5px;
     padding: 6px;
     transition: all 0.5s;
 }
 .main__login button:hover{
     background-color: #0022AA;
+    box-shadow: 1px 1px 6px 0px #000;
 }

@@ -35,12 +35,17 @@ p input{
     display: block;
 
 }
-p button{
+button{
     border: none;
     border-radius: 5px;
     color: white;
-    background-color: #1259c3;
+    background-color: var(--celeste);
     margin: 10px 5px;
     width: 45%;
     padding: 5px;
+    transition: all 0.25s;
+}
+button:hover{
+    background-color: #0022AA;
+    box-shadow: 1px 1px 6px 0px #000;
 }
