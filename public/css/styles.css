@@ -96,6 +96,7 @@ img{
 main article{
     margin: 10px 10px;
     width: 80%;
+    transition: all 0.25s;
 }
 
 main h2{
@@ -109,6 +110,7 @@ main h4{
     display: none;
     font-size: 16px;
     color: var(--gris-oscuro);
+    transition: all 0.25s;
 }
 main article:hover h4{
     display: block;
@@ -123,7 +125,7 @@ main p{
 }
 .info_descuento{
     text-align: center;
-    width: 68%;
+    width: 60%;
     font-size: 16px;
     color: var(--verde);
     margin: 0%;
@@ -134,6 +136,11 @@ main p{
 }
 
 .article__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 60px;
     position: relative;
     padding: 15px;
     border-top: solid 1px var(--gris-claro);
@@ -173,7 +180,8 @@ footer section{
 footer i{
     font-size: 2em;
     margin-bottom: 10px;
-    color: var(--celeste)
+    color: var(--celeste);
+    transition: all 0.5s;
 }
 footer h4{
     text-align: center;
@@ -236,12 +244,9 @@ footer p{
     .contenedor__menu-burguer, .menu-burguer{
         display: none;
     }
-    main h4{
-        display: block;
-    }
+    
     main article{
         width: 45%;
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     
 }
@@ -261,11 +266,13 @@ footer p{
     margin: 0 15px;
    }
     main article{
-        width: 22%;
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 22%;     
     }
     footer section{
         max-width: 30%;
+    }
+    footer section i:hover{
+        color: var(--azul);
     }
   
 }
