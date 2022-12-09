@@ -1,0 +1,46 @@
+@import url(styles.css);
+label{
+    font-weight: 700 ;
+}
+.main__registro{
+    padding: 15px;
+    margin: auto;  
+}
+.main__registro p{
+    display: block;
+    padding: 15px;
+    width: 100%;
+}
+.registro__input{
+    width: 96%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.registro__perfil{
+    display: block;
+    padding: 10px 0;
+}
+p input{
+    margin:10px 15px;
+}
+.input__foto{
+    width: 96%;
+}
+.registro__intereses{
+    display: block;
+    padding: 10px 0;
+}
+.registro__intereses-contenedor p{
+    display: block;
+
+}
+p button{
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #1259c3;
+    margin: 10px 5px;
+    width: 45%;
+    padding: 5px;
+}

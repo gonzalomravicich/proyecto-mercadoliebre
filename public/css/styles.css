@@ -1,0 +1,271 @@
+@import url(normalize.css);
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{ 
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+}
+/* /////////////////////////////////////////MOBILE////////////////////////////////////////////////// */
+body{
+    width: 100vw;
+    display: inline-block;
+    margin: 0;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+    background-color: var(--gris-claro);
+}
+/* ------------------------------------------HEADER---------------------------------------- */
+header{
+    background-color: var(--amarillo);
+    padding: 15px;
+}
+.header__bar-superior{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    
+}
+.bar-superior__logo{
+    width: 50%;
+    padding: 10px 7px;
+}
+.bar-superior__buscador{
+    width: 50%;
+    padding: 7px;
+    align-self: center;
+}
+.bar-superior__buscador input{
+    padding: 12px;
+    width: 88%;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    line-height: 0;
+}
+#icono-buscar{
+    background-color: #fff;
+    padding: 13px 3%;
+    text-align: center;
+    margin-left: -9px;
+    border-radius: 5px;
+}
+.bar-superior__cuotas{
+    margin: 5px auto;
+}
+.bar-superior__cuotas p{
+    display: inline-block;
+}
+.contenedor__menu-burguer{
+    text-align: center;
+    margin-top: 15px;
+}
+.menu-burguer{
+    background-color: var(--celeste);
+    font-size: 16px;
+    color: #fff;
+    padding: 9px 10px;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+.header__bar-inferior{
+    display: none;
+}
+/* ---------------------------------- main ------------------------------------- */
+main{
+    margin: auto;
+    width: 90vw;
+    
+}
+main section{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+img{
+    max-width: 100%;
+}
+main article{
+    margin: 10px 10px;
+    width: 80%;
+}
+
+main h2{
+    text-align:justify;
+    color: var(--gris-oscuro);
+    font-size: 24px;
+    padding: 10px;
+ }
+
+main h4{
+    display: none;
+    font-size: 16px;
+    color: var(--gris-oscuro);
+}
+main article:hover h4{
+    display: block;
+}
+main article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+main p{
+    display: inline-block;
+    font-size: 16px;
+    margin: 0%;
+}
+.info_descuento{
+    text-align: center;
+    width: 68%;
+    font-size: 16px;
+    color: var(--verde);
+    margin: 0%;
+}
+.info__precio{
+    text-align: center;
+    width: 28%;
+}
+
+.article__info{
+    position: relative;
+    padding: 15px;
+    border-top: solid 1px var(--gris-claro);
+    background-color: white;
+}
+main section article i{
+color: var(--verde);
+display: block;
+font-size: 16px;
+padding: 5px;
+width: 30px;
+height: 30px;
+border: 1px solid var(--verde);
+background-color: #FFF;
+border-radius: 50%;
+position: absolute;
+right: 20px;
+top: -15px;
+transition: all 1000ms;
+}
+main section article i:hover{
+transform: rotate(-90deg);
+}
+/* -----------------------------------------footer-------------------------------------- */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+footer section{
+    margin: 10px;
+    padding: 30px;
+    text-align: center;
+    max-width: 90%;
+}
+footer i{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--celeste)
+}
+footer h4{
+    text-align: center;
+    font-size: 16px;
+    margin: 0%;
+}
+footer p{
+    text-align: center;
+    margin: 0%;
+    color: var(--gris-oscuro);
+}
+/* /////////////////////////////////////////TABLET////////////////////////////////////////////////// */
+@media (min-width: 580px){
+    .header__bar-superior{
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .bar-superior__cuotas{
+        max-width: 250px;
+        text-align: right;
+        margin: 0;
+    }
+    .bar-superior__logo{
+        width: 250px;
+    }
+    .bar-superior__buscador{
+        width: 200px;
+
+    }
+    .bar-superior__buscador input{
+        padding: 2px;
+        width: 80%;
+        border-radius: 2px;
+    }
+    #icono-buscar{
+        background-color: #fff;
+        border: solid 0.5px #000;
+        padding: 2px;
+        margin: 2px;
+    }
+    .header__bar-inferior{
+        display: flex;
+        justify-content: space-between;
+    }
+    .header__bar-inferior ul{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    .header__bar-inferior li{
+        margin: 0 10px;
+    }
+    .header__bar-inferior a{
+        text-decoration: none;
+        color: var(--gris-oscuro);
+    }
+    .contenedor__menu-burguer, .menu-burguer{
+        display: none;
+    }
+    main h4{
+        display: block;
+    }
+    main article{
+        width: 45%;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    
+}
+
+
+/* /////////////////////////////////////////DESKTOP////////////////////////////////////////////////// */
+
+@media (min-width:900px){
+    .bar-superior__buscador{
+        width: 40%;
+    }
+    .bar-superior__buscador input{
+        padding: 8px;
+    }
+   .header__bar-inferior li{
+    font-size: 16px;
+    margin: 0 15px;
+   }
+    main article{
+        width: 22%;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    footer section{
+        max-width: 30%;
+    }
+  
+}

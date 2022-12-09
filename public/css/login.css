@@ -1,0 +1,29 @@
+@import url(styles.css);
+
+.main__login{
+padding: 10px;
+}
+.main__login p{
+    padding: 15px;
+    display: block;
+    
+}
+.main__login p input{
+    width: 98%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+.main__login button{
+    display: block;
+    width: 70%;
+    margin: 15px auto;
+    background-color:#1259c3;
+    color: white;
+    border-radius: 5px;
+    padding: 6px;
+    transition: all 0.5s;
+}
+.main__login button:hover{
+    background-color: #0022AA;
+}
