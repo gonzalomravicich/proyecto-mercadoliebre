@@ -6,6 +6,7 @@ padding: 10px;
 .main__login p{
     padding: 15px;
     display: block;
+    margin: 15px 0;
     
 }
 .main__login p input{
@@ -17,12 +18,12 @@ padding: 10px;
 .main__login button{
     display: block;
     width: 70%;
-    margin: 15px auto;
+    margin: 30px auto;
     background-color:#1259c3;
     color: white;
     border: none;
     border-radius: 5px;
-    padding: 6px;
+    padding: 10px;
     transition: all 0.5s;
 }
 .main__login button:hover{

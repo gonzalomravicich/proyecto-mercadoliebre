@@ -42,10 +42,14 @@ button{
     background-color: var(--celeste);
     margin: 10px 5px;
     width: 45%;
-    padding: 5px;
+    padding: 10px;
     transition: all 0.25s;
+    max-width: 300px;
 }
 button:hover{
     background-color: #0022AA;
     box-shadow: 1px 1px 6px 0px #000;
+}
+.registro_boton-contenedor{
+    text-align: center;
 }

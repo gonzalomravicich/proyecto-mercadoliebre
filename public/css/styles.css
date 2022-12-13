@@ -81,7 +81,7 @@ header{
 }
 /* ---------------------------------- main ------------------------------------- */
 main{
-    margin: auto;
+    margin: 15px auto;
     width: 90vw;
     
 }
@@ -137,8 +137,8 @@ main p{
 
 .article__info{
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
     flex-wrap: wrap;
     height: 60px;
     position: relative;
@@ -165,7 +165,8 @@ main section article i:hover{
 transform: rotate(-90deg);
 }
 /* -----------------------------------------footer-------------------------------------- */
-footer{
+footer{ 
+    background-color: #FFF;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -211,18 +212,6 @@ footer p{
     }
     .bar-superior__buscador{
         width: 200px;
-
-    }
-    .bar-superior__buscador input{
-        padding: 2px;
-        width: 80%;
-        border-radius: 2px;
-    }
-    #icono-buscar{
-        background-color: #fff;
-        border: solid 0.5px #000;
-        padding: 2px;
-        margin: 2px;
     }
     .header__bar-inferior{
         display: flex;
@@ -256,10 +245,7 @@ footer p{
 
 @media (min-width:900px){
     .bar-superior__buscador{
-        width: 40%;
-    }
-    .bar-superior__buscador input{
-        padding: 8px;
+        width: 44%;
     }
    .header__bar-inferior li{
     font-size: 16px;
