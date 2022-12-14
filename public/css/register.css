@@ -53,3 +53,9 @@ button:hover{
 .registro_boton-contenedor{
     text-align: center;
 }
+/* /////////////////////////////////////////////////////////////////tablet///////////////////////////////////////////// */
+@media (min-width: 580px){
+    .main__registro{
+        width: 70%;
+    }
+}
