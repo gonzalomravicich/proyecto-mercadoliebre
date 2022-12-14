@@ -1,7 +1,9 @@
 @import url(styles.css);
 
 .main__login{
-padding: 10px;
+    width: 70%;
+    margin: auto;   
+    padding: 10px;
 }
 .main__login p{
     padding: 15px;
@@ -17,9 +19,9 @@ padding: 10px;
 }
 .main__login button{
     display: block;
-    width: 70%;
+    width: 98%;
     margin: 30px auto;
-    background-color:#1259c3;
+    background-color:var(--celeste);
     color: white;
     border: none;
     border-radius: 5px;
@@ -27,6 +29,6 @@ padding: 10px;
     transition: all 0.5s;
 }
 .main__login button:hover{
-    background-color: #0022AA;
+    background-color: var(--azul);
     box-shadow: 1px 1px 6px 0px #000;
 }

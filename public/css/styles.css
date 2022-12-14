@@ -190,8 +190,9 @@ footer h4{
     margin: 0%;
 }
 footer p{
+    max-width: 60%;
     text-align: center;
-    margin: 0%;
+    margin: 0 auto;
     color: var(--gris-oscuro);
 }
 /* /////////////////////////////////////////TABLET////////////////////////////////////////////////// */

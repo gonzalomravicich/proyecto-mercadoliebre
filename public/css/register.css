@@ -1,5 +1,6 @@
 @import url(styles.css);
 label{
+    font-size: 18px;
     font-weight: 700 ;
 }
 .main__registro{
@@ -12,10 +13,11 @@ label{
     width: 100%;
 }
 .registro__input{
-    width: 96%;
+    width: 100%;
     padding: 10px;
     border: none;
     border-radius: 5px;
+    margin: 10px 0;
 }
 .registro__perfil{
     display: block;
@@ -47,15 +49,16 @@ button{
     max-width: 300px;
 }
 button:hover{
-    background-color: #0022AA;
+    background-color: var(--azul);
     box-shadow: 1px 1px 6px 0px #000;
 }
 .registro_boton-contenedor{
     text-align: center;
+    width: 100%;
 }
 /* /////////////////////////////////////////////////////////////////tablet///////////////////////////////////////////// */
 @media (min-width: 580px){
     .main__registro{
-        width: 70%;
+        width: 60%;
     }
 }
