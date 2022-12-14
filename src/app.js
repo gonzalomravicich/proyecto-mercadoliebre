@@ -13,6 +13,8 @@ app.get("/register", (req, res)=>{
 app.get("/login", (req, res)=>{
     res.sendFile(path.join(__dirname, "/views/login.html"))
 })
-app.listen(3050, ()=>{
-    console.log("server run in : http://localhost:3050/")
+
+const port = process.env.PORT || 3050;
+app.listen(port, ()=>{
+    console.log("server run in : http://localhost:" + port)
 })
