@@ -51,6 +51,9 @@ header{
     border-radius: 5px;
     line-height: 0;
 }
+.bar-superior__buscador input:focus{
+    outline: none;
+}
 #icono-buscar{
     background-color: #fff;
     padding: 13px 3%;
